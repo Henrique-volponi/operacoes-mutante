@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "packageManager": "npm",
+  "testRunner": "jest",
+  "mutate": [
+    "src/operacoes.js:1-18",
+    "src/operacoes.js:20-83",
+    "src/operacoes.js:85-131"
+  ],
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress",
+    "json"
+  ],
+  "coverageAnalysis": "perTest",
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "thresholds": {
+    "high": 98,
+    "low": 90,
+    "break": null
+  }
+}

@@ -17,7 +17,7 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('3. deve multiplicar dois números positivos', () => { expect(multiplicacao(3, 4)).toBe(12); });
   test('4. deve dividir e lançar erro para divisão por zero', () => {
     expect(divisao(10, 2)).toBe(5);
-    expect(() => divisao(5, 0)).toThrow();
+    expect(() => divisao(5, 0)).toThrow('Divisão por zero não é permitida.');
   });
   test('5. deve calcular a potência com expoente positivo', () => { expect(potencia(2, 3)).toBe(8); });
   test('6. deve calcular a raiz quadrada de um quadrado perfeito', () => { expect(raizQuadrada(16)).toBe(4); });
